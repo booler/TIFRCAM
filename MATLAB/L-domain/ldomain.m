@@ -96,7 +96,7 @@ while error>tol
     error = max(max(abs(u1-u)));
     count = count +1;
     
-    contour(x,y,u1);
+    surf(x,y,u1);
     %axis([a,b,c,d,0,]);
     pause(0.01);
     

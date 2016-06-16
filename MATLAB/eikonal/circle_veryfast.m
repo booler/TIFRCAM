@@ -18,7 +18,7 @@ c = -1;
 d = 1;
 
 % No of Divisions 
-N = 200;
+N = 50;
 
 % Space discretization
 h = (b-a)/N;
@@ -116,8 +116,8 @@ while error>tol
     error = max(max(abs(u1-u)));    
     u = u1;
     count = count+1;
-    %contour(x,y,u1);
-    %pause(0.1);
+    surf(x,y,u1);
+    pause(0.1);
 end
 toc
 profile viewer;
