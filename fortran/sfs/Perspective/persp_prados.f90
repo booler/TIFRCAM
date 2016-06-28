@@ -19,7 +19,7 @@ do j = 1,N+1
    y(j) = c + (j-1)*h
 enddo
 
-open(unit = 1, file = "thing2.txt")
+open(unit = 1, file = "closed.txt")
 read(1, *) I
 
 ! Defining Parameters
@@ -206,7 +206,7 @@ do while (error> tol)
       Ix = maxloc((/0.,-Dxp,Dxm/),dim=1)
       Iy = maxloc((/0.,-Dyp,Dym/),dim=1)
 
-      L = -exp(-2*u(N+1,k)) + sqrt(f**2*(Dx**2+Dy**2) + M(N+1,k)**2*(Ax(Ix)*x(N+1)+Ay(Iy)*y(k))**2 + (M(N+1,k)*Q(N+1,k))**2 ) 
+      L = -exp(-2*u(N+1,k)) + sqrt(f**2*(Dx**2+Dy**2) + M(N+1,k)**2*(Ax(Ix)*x(N+1)+Ay(Iy)*y(k))**2 + (M(N+1,k)*Q(N+1,k))**2 )
       unew(N+1,k) = u(N+1,k) - delt*L
    enddo
 
