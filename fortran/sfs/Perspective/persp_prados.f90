@@ -5,7 +5,7 @@ program persp1
 implicit none
 
 integer, parameter :: Nx = 201, Ny = 201
-real(kind = 8), parameter :: a = 0., b = 1., c = 0., d = 1., tol = 1e-3, f = 1., pi = acos(-1.)
+real(kind = 8), parameter :: a = 0., b = 1., c = 0., d = 1., tol = 1e-5, f = 1., pi = acos(-1.)
 real(kind = 8), dimension(Nx-1,Ny-1) :: u, unew, I, exact, M, Q
 real(kind = 8), dimension(Nx-1) :: x
 real(kind = 8), dimension(Ny-1) :: y
@@ -24,7 +24,7 @@ do j = 1,Ny-1
    y(j) = c + (j)*hy
 enddo
 
-open(unit = 1, file = "blj.txt")
+open(unit = 1, file = "closed.txt")
 read(1, *) I
 
 ! Defining Parameters
