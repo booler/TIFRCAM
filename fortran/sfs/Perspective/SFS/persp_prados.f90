@@ -5,7 +5,7 @@ program persp1
 implicit none
 
 integer, parameter :: Nx = 201, Ny = 201
-real(kind = 8), parameter :: a = 0., b = 1., c = 0., d = 1., tol = 1e-6, f = 0.1, pi = acos(-1.)
+real(kind = 8), parameter :: a = 0., b = 1., c = 0., d = 1., tol = 1e-5, f = 1., pi = acos(-1.)
 real(kind = 8), dimension(Nx-1,Ny-1) :: u, unew, I, exact, M, Q
 real(kind = 8), dimension(Nx-1) :: x
 real(kind = 8), dimension(Ny-1) :: y
@@ -49,7 +49,7 @@ do k = 1,Ny-1
    enddo
 enddo
 
-delt = 0.1*min(hx,hy)
+delt = 0.5*min(hx,hy)
 error = 100.
 
 !  do p = 1,1000

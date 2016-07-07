@@ -10,4 +10,4 @@ surf(x,y,z2,'EdgeColor','none')
 colormap gray
 light('Position',[1 1 1],'Style','local')
 lighting phong
-axis([0.1,0.9,0.0,1,-2.8,-1.5])
+axis([0.1,0.9,0.0,1,-1.5,-0.8])
