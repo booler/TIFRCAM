@@ -1,13 +1,22 @@
 load op_neumannf.txt
 Z1 = op_neumannf(:,3);
-z2 = reshape(Z1,[200,200]);
+z2 = reshape(Z1,[300,300]);
 
-x = linspace(0,1,200);
-y = linspace(0,1,200);
+x = linspace(0,1,300);
+y = linspace(0,1,300);
 
 figure(1)
-surf(x,y,z2,'EdgeColor','none')
-colormap gray
-light('Position',[1 1 1],'Style','local')
+surf(x,y,z2','EdgeColor','none')
+
+%colormap gray
+colormap ([0.7 0.7 0.7]);
+material dull;
+%set(gca,'visible','off')
+grid on;
+set(gca,'color','black')
+set(gcf,'color','black')
+light('Position',[0 0 10],'Style','local')
 lighting phong
-axis([0.1,0.9,0.0,1,-2.8,-1.5])
+axis equal tight;
+
+%axis([0,1,0,1,0,2]);
