@@ -5,7 +5,7 @@ program persp1
 implicit none
 
 integer, parameter :: Nx = 301, Ny = 301
-real(kind = 8), parameter :: a = 0., b = 1., c = 0., d = 1., tol = 1e-8, f = 1., pi = acos(-1.)
+real(kind = 8), parameter :: a = 0., b = 1., c = 0., d = 1., tol = 1e-4, f = 1., pi = acos(-1.)
 real(kind = 8), dimension(Nx-1,Ny-1) :: u, unew, I, exact, M, Q
 real(kind = 8), dimension(Nx-1) :: x
 real(kind = 8), dimension(Ny-1) :: y
