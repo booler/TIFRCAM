@@ -9,15 +9,19 @@ figure(1)
 surf(x,y,z2','EdgeColor','none')
 
 %colormap gray
-colormap ([1 1 1]);
+colormap ([0.8 0.8 0.8]);
 %material dull;
-material ([0 1 0]);
+material ([0 1 0.1]);
 %set(gca,'visible','off')
 grid on;
 set(gca,'color','black')
 %set(gcf,'color','black')
-light('Position',[0 0 100],'Style','local')
+light('Position',[0 0 5],'Style','local')
 lighting phong
-axis equal tight;
+%axis equal tight;
+xlabel('x');
+ylabel('y');
+zlabel('u(x,y)\rightarrow');
+title('Reconstructed Mozart');
 
-axis([0,1,0,1,-2,0]);
+%axis([0,1,0,1,0,1]);

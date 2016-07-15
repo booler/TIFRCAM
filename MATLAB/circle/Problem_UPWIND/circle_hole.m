@@ -15,7 +15,7 @@ a = -1;
 b = 1;
 c = -1;
 d = 1;
-N = 200;
+N = 50;
 M = N;
 h = (b-a)/N;
 k = 0.05*h;
@@ -256,10 +256,16 @@ while error>tol
     end
     error = max(max(abs(u1-u)));
     count = count +1;
-    mesh(x,y,u1);
+    surf(x,y,u1);
     axis([a,b,c,d,0,1]);
     pause(0.01);
     u = u1;
 end
 %end
 %surf(x,y,u1);
+surf(x,y,u1);
+xlabel('x') % x-axis label
+ylabel('y') % y-axis label
+zlabel('u(x,y)\rightarrow')
+title('Solution to 2D Eikonal equation on a non-convex domain');
+axis([-1 1 -1 1])

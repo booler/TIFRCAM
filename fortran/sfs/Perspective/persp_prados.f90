@@ -52,8 +52,8 @@ enddo
 delt = 0.1*min(hx,hy)
 error = 100.
 
-!  do p = 1,1000
-do while (error> tol)
+  do p = 1,4000
+!do while (error> tol)
    !j = 1, k = 1
    Dxp = (u(2,1)-u(1,1))/hx
    Dxm = 0.

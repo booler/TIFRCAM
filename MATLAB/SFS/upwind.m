@@ -12,11 +12,11 @@ close all
 format long
 
 a = 0; b = 1;
-N = 10;
+N = 25;
 
 global upx
 
-for p=1:4
+for p=1:1
     h(p) = (b-a)/N;
     
     x = (a+h(p):h(p):b-h(p))';

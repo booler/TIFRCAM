@@ -20,7 +20,7 @@ c = 0;
 d = 2;
 
 % No of Divisions 
-N = 100;
+N = 51;
 
 % Space discretization
 h = (b-a)/N;
@@ -96,10 +96,15 @@ while error>tol
     error = max(max(abs(u1-u)));
     count = count +1;
     
-    contour(x,y,u1);
+    %contour(x,y,u1);
     %axis([a,b,c,d,0,]);
-    pause(0.01);
+    %pause(0.01);
     
     u = u1;
 end
-
+surf(x,y,u1);
+xlabel('x') % x-axis label
+ylabel('y') % y-axis label
+zlabel('u(x,y)\rightarrow')
+title('Solution to 2D Eikonal equation on L domain');
+%axis([-1 1 -1 1 0 1])

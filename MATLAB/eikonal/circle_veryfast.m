@@ -18,7 +18,7 @@ c = -1;
 d = 1;
 
 % No of Divisions 
-N = 100;
+N = 50;
 
 % Space discretization
 h = (b-a)/N;
@@ -44,7 +44,7 @@ u = u1;
 
 % Parameters
 error = 100;
-tol = 1e-16;
+tol = 1e-8;
 count = 0;
 tic
 while error>tol
@@ -118,8 +118,14 @@ while error>tol
     error = max(max(abs(u1-u)));    
     u = u1;
     count = count+1;
-    surf(x,y,u1);
-    pause(0.01);
+    %surf(x,y,u1);
+    %pause(0.01);
 end
 toc
 profile viewer;
+surf(x,y,u1);
+xlabel('x') % x-axis label
+ylabel('y') % y-axis label
+zlabel('u(x,y)\rightarrow')
+title('Solution to 2D Eikonal equation on a circular domain');
+axis([-1 1 -1 1 0 1])

@@ -10,8 +10,8 @@ clear
 close all
 format long
 
-Nx = 10;
-Ny = 10;
+Nx = 50;
+Ny = 50;
 
 a =-1; b = 1;
 c = -1; d = 1;
@@ -64,4 +64,9 @@ while error > eps
 end
 toc
 iterations
+xlabel('x') % x-axis label
+ylabel('y') % y-axis label
+zlabel('u(x,y)\rightarrow')
+title('Solution to 2D Eikonal equation on a square domain');
+axis([-1 1 -1 1 0 1])
 %surf(y,x,Unew);

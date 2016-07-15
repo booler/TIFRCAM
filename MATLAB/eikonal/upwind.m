@@ -24,10 +24,11 @@ delt = h;
 eps = 10^-4;
 error = 100;
 
-u = (x.^2-1);
+u = zeros(N+1);
 unew = u;
 iter = 0;
-while error > eps
+%while error > eps
+for i = 1:3
     for i = 2:N
         Dp = (u(i+1)-u(i))/h;
         Dm = (u(i-1)-u(i))/h;
@@ -42,7 +43,11 @@ while error > eps
     u = unew;
     iter = iter+1;
     plot(x,unew);
-    pause(0.1);
+    pause(0.00001);
 end
 plot(x,unew)
+xlabel('x\rightarrow') % x-axis label
+ylabel('u(x)\rightarrow') % y-axis label
+title('Solution to 1D Eikonal equation');
+axis([-1 1 0 1])
 iter
