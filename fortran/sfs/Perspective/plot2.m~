@@ -7,8 +7,8 @@ y = linspace(-2,2,200);
 
 figure(1)
 %z2 = peaks(300);
-surf(x,y,z2,'EdgeColor','none')
-%surf(x,y,gray(:,:,1)','EdgeColor','none')
+%surf(x,y,z2,'EdgeColor','none')
+
 %colormap gray
 colormap ([0.5 0.5 0.5]);
 material dull;
@@ -22,7 +22,7 @@ lighting phong
 axis equal tight;
 xlabel('x');
 ylabel('y');
-%zlabel('u(x,y)\rightarrow');
+zlabel('u(x,y)\rightarrow');
 %title('Reconstructed Mozart');
 
 axis([-1.5,1.5,-2,2,-1.7,0]);
