@@ -1,0 +1,23 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \textbf {Shape from Shading :} The \emph {ground truth} is the original object and SfS attempts to reconstruct it, just from knowing the \textit {Intensity map}\relax }}{5}{figure.caption.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Orthographic camera model\relax }}{19}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces a) Orthographic vs b) Perspective : Number of Singular Points\relax }}{22}{figure.caption.7}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Perspective Projection Model\relax }}{23}{figure.caption.8}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Viscosity Soution of the 1D Eikonal Equation\relax }}{32}{figure.caption.9}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Evolution of solution to the Eikonal Equation. The steady state condition is taken as $\delimiter 69645069 U^{n+1} - u^{n} \delimiter 86422285 < \epsilon = 10^{-16}$\relax }}{33}{figure.caption.10}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Solution of 2D Eikonal Equation\relax }}{34}{figure.caption.11}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Immersed Circle\relax }}{35}{figure.caption.12}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \textbf {Inout} Matrix for $10 \times 10$ mesh\relax }}{35}{figure.caption.13}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Solution in a circular domain\relax }}{36}{figure.caption.14}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Other Domains\relax }}{37}{figure.caption.15}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Synthetic Test Vase\relax }}{37}{figure.caption.16}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Reconstruction of the Synthetic Test Vase\relax }}{38}{figure.caption.17}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Reconstruction using Perspective Model by Prados \cite {prados2}\relax }}{39}{figure.caption.18}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Time evolution of Mozart's Face\relax }}{40}{figure.caption.19}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Real Life Reconstructions\relax }}{41}{figure.caption.20}
+\addvspace {10\p@ }

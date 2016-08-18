@@ -1,0 +1,96 @@
+\begin{thebibliography}{10}
+
+\bibitem{lions}
+{\sc Crandall, M.~G., and Lions, P.-L.}
+\newblock Viscosity solutions of hamilton-jacobi equations.
+\newblock {\em Trans. Amer. Math. Soc. 277 (1983), 1-42\/} (1983).
+
+\bibitem{prados2}
+{\sc Emmanuel~Prados, Olivier~Faugeras, F.~C.}
+\newblock Shape from shading : A well posed problem.
+\newblock Tech. rep., INIRIA, 2004.
+
+\bibitem{prados1}
+{\sc Faugeras, E. P. .~O.}
+\newblock Shape from shading.
+\newblock {\em Handbook of Mathematical Models in Computer Vision\/} (2006),
+  375--388.
+
+\bibitem{gowda}
+{\sc Gowda, G.}
+\newblock Hyperbolic conservation laws, theory and numerics.
+
+\bibitem{hadamard}
+{\sc Hadamard, J.}
+\newblock Lectures on cauchy problem in linear partial differential equations.
+\newblock Yale University Press, 1923.
+
+\bibitem{ham1}
+{\sc Hamilton, W.~R.}
+\newblock On a generalmethod of expressing the paths of light, and of the
+  planets, by the coefficients of a characteristic function, 1833.
+
+\bibitem{ham2}
+{\sc Hamilton, W.~R.}
+\newblock On the application to dynamics of a generalmathematical method
+  previously applied to optics, 1834.
+
+\bibitem{bap}
+{\sc Hiriart-Urruty, J.-B., and Lemar´echal, C.}
+\newblock Convex analysis and minimization algorithms i.
+\newblock {\em Grundlehren der Mathematischen Wissenschaften, Springer 305\/},
+  1996.
+
+\bibitem{horn}
+{\sc Horn, B.}
+\newblock {\em Robot Vision}.
+\newblock McGraw Hill Book Company, 1986.
+
+\bibitem{ishii}
+{\sc Ishii., H.}
+\newblock A boundary value problem of the dirichlet type forhamilton-jacobi
+  equations.
+\newblock {\em Annali della Scuola Normale Superiore di Pisa - Classe di
+  Scienze\/} (1989), 105--135.
+
+\bibitem{yong}
+{\sc Ju, Y.~C.}
+\newblock Hamilton-jacobi equations for computer vision: Application in shape
+  from shading, 2010.
+
+\bibitem{leve}
+{\sc Leveque, R.~J.}
+\newblock Numerical methods for conservation laws.
+
+\bibitem{lax}
+{\sc of~the stability of linear finite~difference equations, S.}
+\newblock Peter david lax and robert davis richtmyer.
+\newblock Communications on Pure and Applied Mathematics.
+
+\bibitem{pesk}
+{\sc Peskin, C.~S.}
+\newblock The immersed boundary method.
+\newblock {\em Acta Numerica (2002)\/} (2002), 479–517.
+
+\bibitem{prad2}
+{\sc Prados, E., and Faugeras, O.}
+\newblock A mathematical and algorithmic study of the lambertian sfs problem
+  for orthographic and pinhole cameras.
+\newblock Tech. rep., INRIA, nov 2003.
+
+\bibitem{prad}
+{\sc Prados, E., and Faugeras, O.~D.}
+\newblock Unifying approaches and removing unrealistic assumptions in shape
+  from shading: Mathematics can help.
+\newblock {\em ECCV04\/} (2004).
+
+\bibitem{ZIA}
+{\sc R.~K. P.~Zia, E. F.~R., and McKay, S.~R.}
+\newblock Making sense of the legendre transform.
+
+\bibitem{rouy}
+{\sc Rouy, E., and Tourin, A.}
+\newblock A viscosity solutions approach to shape-from- shading.
+\newblock {\em SIAM Journal on Numerical Analysis\/} (1992), 867--884.
+
+\end{thebibliography}

@@ -1,0 +1,104 @@
+% report.tex : Main file for the LaTeX report.
+\documentclass{report}[14pt]
+
+\usepackage{amsmath}
+\usepackage{graphicx,color,geometry}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{theorem}{Theorem}[section]
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			\Large { A Report}
+
+			\vspace{0.5cm}
+
+			\Large{on}
+
+			\vspace{0.5cm}
+			\LARGE { \textbf{Shape from Shading - Theory and Applications} }
+
+			\vspace{2cm}
+
+			\Large{By}
+
+			\vspace{1cm}
+
+			\LARGE{\emph{Balaje K \\ Sanath Keshav}}
+
+			\vspace{3cm}
+			\LARGE{ \textbf{Tata Institute of Fundamental Research - Center for Applicable Mathematics}}\\
+
+			\vspace{0.5cm}
+			\includegraphics[scale = 1]{Images/TIFR_logo.png}
+
+			\vspace{0.5cm}
+			July 2016
+		\end{center}
+	\end{titlepage}
+
+	\chapter*{Acknowledgements}
+	We would like to sincerely thank Prof. G.D.Veerappa Gowda for providing us with an opportunity to work at TIFR-CAM on this project. We thank Dr. Aekta Aggarwal for providing us with valuable inputs, suggestions and tips throughout the Internship. \\
+	
+	\noindent
+	We thank our parents for providing us with constant support and encouragement which helped us throughout this project. We thank the Almighty, without which none of this would have been possible.\\
+	
+	\noindent
+	Once again we thank them all.
+
+	\listoffigures
+	\tableofcontents
+	\chapter{Introduction}
+	\input{chapters/intro}
+
+	\chapter{Viscosity Solutions to Hamilton Jacobi Equations}
+	\input{chapters/mathbg}
+
+	\chapter{Orthographic Shape from Shading}
+	\input{chapters/osfs}
+
+	\chapter{Perspective Shape from Shading}
+	\input{chapters/persfs}
+
+	\chapter{Numerical Schemes}
+	\input{chapters/num}
+
+	\chapter{Numerical Experiments}
+	\input{chapters/exp}
+
+	\chapter{Conclusion}
+	So far in this report, we have explored Shape from Shading problems which focus on \emph{lambertian} surfaces, an assumption does not hold for real life objects except for a very few cases. Thus, these models cannot be used for real life applications extensively. But nonetheless SFS has innumerous applications viz. \emph{medical imaging, face reconstruction, terrain mapping, page reconstruction} and so on.\\
+	
+	\noindent 
+	SFS is a simple yet a powerful tool for object reconstruction as it requires minimal input to reconstruct the original scene although the problem becomes difficult for complex cases. \\
+	
+	\noindent
+	This work can be extended to accomodate the non-lambertian parameters to the Hamilton Jacobi equation in order to get closer to reality. On the other hand analysis namely, existence and uniqueness becomes difficult to study. Also regarding the numerics, one can attempt to develop higher order schemes to improve the accuracy of the solution.\\
+	
+	\noindent 
+	Therefore, there is still room for improvements. It would be very nice if this work has
+	inspired its readers to contribute to the related fields. \\
+	
+	\noindent
+	For readers who wish to see the code that were used for reconstructions can visit.
+	\begin{center}
+		\href{https://www.github.com/Balaje/TIFR.git}{https://www.github.com/Balaje/TIFR.git}
+	\end{center}
+	
+	\nocite{*}
+	\bibliographystyle{acm}
+	\bibliography{biblio}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "latexop.pdf"
+%%% End:
